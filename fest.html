@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>College Fest Registration Form</title>
+	<style>
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f7f3ff;
+		margin: 20px;
+	}
+	h1 {
+		text-align: center;
+		color: #4A148C;
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	table {
+		width: 70%;
+		margin: 0 auto;
+		background-color: #fff;
+		border-collapse: collapse;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		border: 2px solid #9C27B0;
+	}
+	td {
+		padding: 15px;
+		font-size: 18px;
+		color: #333;
+	}
+	th {
+		text-align: left;
+		padding: 15px;	
+		background-color: #9C27B0;
+		color: white;
+		font-size: 20px;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="number"],
+	select,
+	textarea {
+		width: 100%;
+		padding: 10px;
+		font-size: 16px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	input[type="submit"],
+	input[type="reset"] {
+		background-color: #9C27B0;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	input[type="submit"]:hover,
+	input[type="reset"]:hover {
+		background-color: #7B1FA2;
+	}
+	textarea {
+		resize: vertical;
+		height: 100px;
+	}
+	input[type="radio"],
+	input[type="checkbox"] {
+		width: auto;
+		margin-right: 5px;
+	}
+	.footer {
+		text-align: center;
+		margin-top: 20px;
+		color: #4A148C;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	</style>
+</head>
+
+<body>
+	<h1>College Fest Registration Form</h1>
+	<form action="#" method="post">
+		<table>
+			<tr>
+				<th colspan="2">Personal Information</th>
+			</tr>
+			<tr>
+				<td>Full Name:</td>
+				<td><input type="text" name="fullname" placeholder="Enter your full name" required></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="email" placeholder="Enter your email" required></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password" placeholder="Enter your password" required></td>
+			</tr>
+			<tr>
+				<td>Mobile Number:</td>
+				<td><input type="number" name="mobile" placeholder="Enter your mobile number" required></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td>
+					<input type="radio" name="gender" value="male"> Male
+					<input type="radio" name="gender" value="female"> Female
+					<input type="radio" name="gender" value="other"> Other
+				</td>
+			</tr>
+			<tr>
+				<td>Department:</td>
+				<td>
+					<select name="department" required>
+						<option value="">--Select Department--</option>
+						<option value="cse">Computer Science</option>
+						<option value="ece">Electronics</option>
+						<option value="mech">Mechanical</option>
+						<option value="civil">Civil</option>
+						<option value="bba">BBA</option>
+						<option value="arts">Arts</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Year of Study:</td>
+				<td>
+					<select name="year" required>
+						<option value="">--Select Year--</option>
+						<option value="1">1st Year</option>
+						<option value="2">2nd Year</option>
+						<option value="3">3rd Year</option>
+						<option value="4">4th Year</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">Fest Participation Details</th>
+			</tr>
+			<tr>
+				<td>Events Interested In:</td>
+				<td>
+					<input type="checkbox" name="events" value="dance"> Dance
+					<input type="checkbox" name="events" value="music"> Music
+					<input type="checkbox" name="events" value="quiz"> Quiz
+					<input type="checkbox" name="events" value="coding"> Coding
+					<input type="checkbox" name="events" value="gaming"> Gaming
+					<input type="checkbox" name="events" value="art"> Art & Craft
+				</td>
+			</tr>
+			<tr>
+				<td>T-Shirt Size:</td>
+				<td>
+					<select name="tshirt">
+						<option value="">--Select Size--</option>
+						<option value="S">Small</option>
+						<option value="M">Medium</option>
+						<option value="L">Large</option>
+						<option value="XL">XL</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><textarea name="address" placeholder="Enter your address" required></textarea></td>
+			</tr>
+			<tr>
+				<td>Upload Student ID:</td>
+				<td><input type="file" name="studentid" accept=".jpg,.jpeg,.png,.pdf"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:center;">
+					<input type="submit" value="Register">
+					<input type="reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<div class="footer">
+		<p>Get ready to shine at our College Fest 2025!</p>
+	</div>
+</body>
+</html>
